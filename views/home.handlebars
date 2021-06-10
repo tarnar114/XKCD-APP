@@ -1,0 +1,81 @@
+<div>
+
+  <br />
+  <div class="card">
+    <div class="card-header">
+      XKCD comics
+    </div>
+    <div class="card-body">
+
+      <div class="container" name='grid'>
+        <div class="row">
+          <div class="col d-flex justify-content-end">
+            <form method="POST">
+              <button class="btn" name='first' value='first' type="submit">
+                <i class="bi bi-arrow-bar-left"></i>
+              </button>
+
+          </div>
+          <div class="col-6 d-flex justify-content-center">
+            <form method="POST">
+              <div class="btn-group">
+                <button class="btn " name='left' value='left' type="submit">
+                  <i class="fas fa-caret-square-left"></i>
+                </button>
+
+                <button class="btn" name="latest" value='latest' type="submit">
+                  Latest
+                </button>
+                <button class="btn" name="random" value='random' type="submit">
+                  Random
+                </button>
+                <button class="btn" name="right" value='right' type="submit">
+                  <i class="fas fa-caret-square-right"></i>
+                </button>
+              </div>
+
+            </form>
+          </div>
+          <div class="col">
+            <form method="POST">
+              <button class="btn" name="latest" value='latest' type="submit">
+                <i class="bi bi-arrow-bar-right"></i>
+              </button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+      <br>
+     <div class="content-area justify-content-center">
+       <div class=" d-flex justify-content-center">
+      <h4>{{title}}</h4>
+      <br>
+       </div>
+      <br>
+      <div  class="content-area d-flex justify-content-center">
+        <img src="{{Img}}" class="rounded d-block" alt="...">
+
+      </div>
+       <div id="info">
+          <body>
+        {{month}}/{{year}}
+       </body>
+      <h4>Transcript</h4>
+        <p>
+          {{transcript}}
+        </p>
+        
+      </div>
+
+      
+    </div>
+    <br>
+   
+
+    </div>
+   
+
+  </div>
+  <br />
+</div>
