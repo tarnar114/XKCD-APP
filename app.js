@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use(express.static('public'));
 
-const routes=require('./routes/routes');
+const routes=require('./routes/Routes');
 app.use('/',routes);
 
 // const cors = require("cors")
